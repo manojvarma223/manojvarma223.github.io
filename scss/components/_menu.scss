@@ -1,0 +1,20 @@
+// Small Devices
+@media only screen and (max-width : 768px) {
+
+    #mobile-menu-open, #mobile-menu-close {
+        display: block;
+    }
+
+    #menu {
+        height: 100%;
+        overflow-y: auto;
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+
+        li {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
