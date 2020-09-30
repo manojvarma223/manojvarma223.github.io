@@ -37,6 +37,7 @@
 $base-color: #ff4301;
 $base-color-hover: darken($base-color, 10%);
 $dark-grey: #a9a9a9;
+$dark-navy: #39464e;
 
 // Define background colors
 $background: #000;
@@ -832,7 +833,7 @@ footer {
         border-radius: 4px;
         border: none;
         margin-bottom: 10px;
-        background: darken($base-color, 15%);
+        background: $dark-navy;
         color: #fff;
         @include transition();
         @include placeholder {
