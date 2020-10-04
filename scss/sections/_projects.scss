@@ -71,3 +71,9 @@
         transform: none;
     }
 }
+// Large devices
+@media only screen and (min-width : 992px){
+    .project {
+        min-width: 800px;
+    }
+}

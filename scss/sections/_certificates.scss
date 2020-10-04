@@ -1,31 +1,33 @@
 #certificates {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
-    text-align: center;
 
     h2 {
         color: $heading;
         margin-bottom: 50px;
+        width: 100%;
+        text-align: center;
     }
 }
 
 .certificate {
     position: relative;
     max-width: 900px;
-    min-height: 300px;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: $background;
     border-radius: 4px;
+
+    .details {
+        padding: 0px 30px 30px;
+        color: $text;
+    }
 }
 
 .certificate-image {
-    position: absolute;
-    top: 50%;
-    transform: translate(40px,-50%);
-
     img {
         height: 180px;
+        background: $white;
     }
 }
 
@@ -33,7 +35,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 260px;
+    margin-left: 200px;
     padding: 15px;
     text-align: start;
 
@@ -41,6 +43,12 @@
         font-size: 1.5em;
         font-weight: 300;
         color: $heading;
+        margin: 0 0 15px 0;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        color: $bright-grey;
         margin: 0 0 15px 0;
     }
 
@@ -73,6 +81,7 @@
 
     .certificate {
         min-height: 150px;
+        width: 100%;
     }
 
     .certificate-image {
@@ -87,5 +96,21 @@
         transform: none;
         text-align: center;
         width: 100%;
+    }
+}
+
+// Large devices
+@media only screen and (min-width : 992px){
+    .certificate {
+        width: 700px;
+
+        .details {
+            margin-left: 180px;
+        }
+    }
+
+    .certificate-info {
+        margin-top: 30px;
+        height: 100%;
     }
 }

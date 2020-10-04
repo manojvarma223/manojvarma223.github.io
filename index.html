@@ -10,7 +10,8 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
@@ -116,22 +117,155 @@
     </div>
     <!-- End #education -->
 
-    <div id="certificates" class="background-alt">
+    <div id="certificates" class="accordion background-alt">
         <h2 class="heading">Certifications</h2>
         <div class="container">
             <div class="row">
                 <div class="certificate shadow-large">
                     <div class="certificate-image">
-                        <img src="images/certificates/Stanford_Coursera_Logo.jpg" />
+                        <a href="https://coursera.org/share/3bffed0076177173298e2d4e8e0d9e56" target="_blank"><img src="images/certificates/Google-Cloud_Logo.jpg" /></a>
                     </div>
                     <!-- End .certificate-image -->
-                    <div class="certificate-info">
+                    <div class="certificate-info" id="c1-heading" data-toggle="collapse" data-target="#c1-detials" aria-expanded="true" aria-controls="c1-detials">
+                        <h3>How Google does Machine Learning</h3>
+                        <h4>Google Cloud</h4>
+                    </div>
+                    <div class="details collapse" id="c1-detials" aria-labelledby="c1-heading" data-parent="#certificates">
+                        <b>Topics Covered :</b><br/>
+                        Two stages of ML, ML in Google Products, Replacing Heuristic Rules, Pre-trained models, Data Strategy, ML Strategy, ML Surprise, ML and Business Processes, The Path to ML, Human Bias, Evaluating Metrics for Inclusion, Equality of Opportunity, Simulating Decisions, AI Platform Notebooks, Development Process, Computation and Storage, Qwicklabs, Cloud Shell, Serverless Data Analytics, BigQuery and Cloud Datalab, Vision API, Video Intelligence API, Cloud Speech API, Translation and Natural Language, Renting VM.
+                    </div>
+                    <!-- End .certificate-info -->
+                </div>
+                <!-- End .certificate -->
+            </div>
+            <div class="row">
+                <div class="certificate shadow-large">
+                    <div class="certificate-image">
+                        <a href="https://www.udemy.com/certificate/UC-2BAMHM8Z/" target="_blank"><img src="images/certificates/Udemy_Logo.png" /></a>
+                    </div>
+                    <!-- End .certificate-image -->
+                    <div class="certificate-info" id="c7-heading" data-toggle="collapse" data-target="#c7-detials" aria-expanded="true" aria-controls="c7-detials">
+                        <h3>Complete 2020 Data Science & Machine Learning Bootcamp</h3>
+                        <h4>Udemy</h4>
+                    </div>
+                    <div class="details collapse" id="c7-detials" aria-labelledby="c7-heading" data-parent="#certificates">
+                        <h5>Topics Covered :</h5>
+                        Data Cleaning and Pre-Processing, Data Exploration and Visualisation, Linear Regression, Multivariable Regression, Optimisation Algorithms and Gradient Descent, Naive Bayes Classification, Descriptive Statistics and Probability Theory, Neural Networks and Deep Learning, Model Evaluation and Analysis, Serving a Tensorflow Model<br/>
+                        <br/>
+                        <h5>Tools :</h5>
+                        Python 3, Tensorflow, Anaconda, Pandas, Numpy, Scikit Learn, Keras, Matplotlib, Seaborn, SciPy, SymPy
+                    </div>
+                    <!-- End .certificate-info -->
+                </div>
+                <!-- End .certificate -->
+            </div>
+            <div class="row">
+                <div class="certificate shadow-large">
+                    <div class="certificate-image">
+                        <a href="https://coursera.org/share/f706ca854687d8d8685f6ecde2c5bfd8" target="_blank"><img src="images/certificates/deeplearning-ai_Logo.png" /></a>
+                    </div>
+                    <!-- End .certificate-image -->
+                    <div class="certificate-info" id="c2-heading" data-toggle="collapse" data-target="#c2-detials" aria-expanded="true" aria-controls="c2-detials">
+                        <h3>AI for Everyone</h3>
+                        <h4>deeplearning.ai</h4>
+                    </div>
+                    <div class="details collapse" id="c2-detials" aria-labelledby="c2-heading" data-parent="#certificates">
+                        <b>Topics Covered :</b><br/>Machine Learning, Terminology of AI, Workflow of a machine learning project, Workflow of a data science project, Choosing an AI project, Working with an AI team, AI Transformation Playbook, AI pitfalls, Discrimination/Bias, Adverse uses and Adversarial attacks on AI.
+                    </div>
+                    <!-- End .certificate-info -->
+                </div>
+                <!-- End .certificate -->
+            </div>
+            <div class="row">
+                <div class="certificate shadow-large">
+                    <div class="certificate-image">
+                        <a href="https://coursera.org/share/c67018d761f1791bd79ba194964be2ee" target="_blank"><img src="images/certificates/Stanford-University_Logo.png" /></a>
+                    </div>
+                    <!-- End .certificate-image -->
+                    <div class="certificate-info" id="c3-heading" data-toggle="collapse" data-target="#c3-detials" aria-expanded="true" aria-controls="c3-detials">
                         <h3>Machine Learning</h3>
                         <h4>Stanford University</h4>
-                        <p class="details">
-                            This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. Topics include: (i) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks). (ii) Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning). (iii) Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI).
-                        </p>
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/9N6K6YJBBNKZ" target="_blank">View Credential</a>
+                    </div>
+                    <div class="details collapse" id="c3-detials" aria-labelledby="c3-heading" data-parent="#certificates">
+                        <b>Topics Covered :</b><br/>
+                        Linear Regression with One Variable, Linear Regression with Multiple Variables, Logistic Regression, Regularization, Neural Networks, Machine Learning System Design, Support Vector Machines, Unsupervised Learning, Dimentionality Reduction, Anomaly Detection, Recommender Systems, Large Scale Machine Learning.
+                    </div>
+                    <!-- End .certificate-info -->
+                </div>
+                <!-- End .certificate -->
+            </div>
+            <div class="row">
+                <div class="certificate shadow-large">
+                    <div class="certificate-image">
+                        <a href="https://coursera.org/share/98a3e6372f6041c90977712ad01ffa01" target="_blank"><img src="images/certificates/Stanford-University_Logo.png" /></a>
+                    </div>
+                    <!-- End .certificate-image -->
+                    <div class="certificate-info" id="c4-heading" data-toggle="collapse" data-target="#c4-detials" aria-expanded="true" aria-controls="c4-detials">
+                        <h3>Divide and Conquer, Sorting and Searching, and Randomized Algorithms</h3>
+                        <h4>Stanford University</h4>
+                    </div>
+                    <div class="details collapse" id="c4-detials" aria-labelledby="c4-heading" data-parent="#certificates">
+                        <h5>Concepts :</h5>
+                        Big-Oh Notation, Big Omega and Theta, Karatsuba Multiplication, Strassen's Subcubic Matrix Multiplication, Partitioning around a Pivot, Chosing a Good Pivot, Graph Representations, Counting Minimum Cuts<br/><br/>
+                        <h5>Algorithms :</h5>
+                        Merge Sort, Quicksort, Counting Inversions, Closest Pair, Divide and Conquer, Randomized Selection, Deterministic Selection, and Random Contraction.
+                    </div>
+                    <!-- End .certificate-info -->
+                </div>
+                <!-- End .certificate -->
+            </div>
+            <div class="row">
+                <div class="certificate shadow-large">
+                    <div class="certificate-image">
+                        <a href="https://coursera.org/share/5f27490b299970bdf0bf6583897971b6" target="_blank"><img src="images/certificates/Michigan-University_Logo.jpg" /></a>
+                    </div>
+                    <!-- End .certificate-image -->
+                    <div class="certificate-info" id="c5-heading" data-toggle="collapse" data-target="#c5-detials" aria-expanded="true" aria-controls="c5-detials">
+                        <h3>Python Basics</h3>
+                        <h4>Michigan University</h4>
+                    </div>
+                    <div class="details collapse" id="c5-detials" aria-labelledby="c5-heading" data-parent="#certificates">
+                        <h5>Topics Covered :</h5><br/>
+                        Values and Data Types, Variables, Statements and Expressions, Type Conversions, Strings, Lists, Tuples, Loops, Boolean expressions, Logical operators, Precedence of operators, Conditionals, Sequence Mutation, Aliasing, Accumulating Patterns.
+                    </div>
+                    <!-- End .certificate-info -->
+                </div>
+                <!-- End .certificate -->
+            </div>
+            <div class="row">
+                <div class="certificate shadow-large">
+                    <div class="certificate-image">
+                        <a href="https://coursera.org/share/17d0c0d89e18d4d4900e2f309a2d68ae" target="_blank"><img src="images/certificates/Michigan-University_Logo.jpg" /></a>
+                    </div>
+                    <!-- End .certificate-image -->
+                    <div class="certificate-info" id="c6-heading" data-toggle="collapse" data-target="#c6-detials" aria-expanded="true" aria-controls="c6-detials">
+                        <h3>Python Functions, Files, and Dictionaries</h3>
+                        <h4>Michigan University</h4>
+                    </div>
+                    <div class="details collapse" id="c6-detials" aria-labelledby="c6-heading" data-parent="#certificates">
+                        <b>Topics Covered :</b><br/>
+                        Reading and Writing Files, Dictionaries, Funtions, Function composition, Variable scoping, Tuple Packing, While statement, Listener Loop, Anonymous Functions, Lambda Expressions, Sorting.
+                    </div>
+                    <!-- End .certificate-info -->
+                </div>
+                <!-- End .certificate -->
+            </div>
+            <div class="row">
+                <div class="certificate shadow-large">
+                    <div class="certificate-image">
+                        <a href="https://coursera.org/share/63edc233d3b50900227636807083a6a1" target="_blank"><img src="images/certificates/LearnQuest_Logo.jpg" /></a>
+                    </div>
+                    <!-- End .certificate-image -->
+                    <div class="certificate-info" id="c8-heading" data-toggle="collapse" data-target="#c8-detials" aria-expanded="true" aria-controls="c8-detials">
+                        <h3>Cloud Computing Basics (Cloud 101)</h3>
+                        <h4>LearnQuest</h4>
+                    </div>
+                    <div class="details collapse" id="c8-detials" aria-labelledby="c8-heading" data-parent="#certificates">
+                        <h5>Topics Covered :</h5>
+                        Introduction to Cloud Computing, Scalable Compute and Storage Services, Distributed Computing, IaaS, PaaS, SaaS, FaaS, Private Deployment Models, Public Deployment, Hybrid Cloud, HPC Cloud, Big Data Cloud, Bare-metal Computing, VMs, Docker, Kubernetes, Serverless Computing, Distributed and Decentralized applications.
+                        <br/><br/>
+                        <h5>Cloud Platforms Overview :</h5>
+                        Azure, Amazon Web Services (AWS), Google Cloud Platform (GCP), IBM Cloud, SalesForce
                     </div>
                     <!-- End .certificate-info -->
                 </div>
@@ -245,6 +379,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>
